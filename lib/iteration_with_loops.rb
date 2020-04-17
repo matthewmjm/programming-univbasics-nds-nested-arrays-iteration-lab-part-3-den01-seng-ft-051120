@@ -10,7 +10,8 @@ def join_nested_strings(src)
     element_index = 0
     while element_index < src[row_index].length do
       test = src[row_index][element_index]
-      if test.is_a?(Integer)
+      binding.pry
+      if test.is_a?(String)
         element_index += 1
       else
         result << test 
