@@ -11,7 +11,10 @@ def join_nested_strings(src)
     while element_index < src[row_index].length do
       test = src[row_index][element_index]
       if test.is_a?(Integer)
-      element_index += 1
+        element_index += 1
+      else
+        result << test 
+        element_index += 1
     end
     row_index += 1
   end
