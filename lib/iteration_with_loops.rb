@@ -12,9 +12,8 @@ def join_nested_strings(src)
       test = src[row_index][element_index]
       binding.pry
       if test.is_a?(String)
-        element_index += 1
-      else
-        result << test 
+        result << test
+      end
         element_index += 1
     end
     row_index += 1
